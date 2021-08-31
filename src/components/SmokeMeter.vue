@@ -44,14 +44,14 @@ export default defineComponent({
     nowSnort() {
       const now = new Date;
       this.times.unshift(now.toString());
-      fetch("http://speroce.pythonanywhere.com/api/", {method: "POST", body: JSON.stringify(this.times)});
+      fetch("/api/", {method: "POST", body: JSON.stringify(this.times)});
       this.snortsForToday();
 
     },
     todaySnort() {
       const _today = (new Date).toDateString();
       this.times.unshift(_today);
-      fetch("http://speroce.pythonanywhere.com/api/", {method: "POST", body: JSON.stringify(this.times)});
+      fetch("/api/", {method: "POST", body: JSON.stringify(this.times)});
       this.snortsForToday();
 
     },
