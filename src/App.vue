@@ -1,5 +1,7 @@
 <template>
-  <div class="bar"/>
+  <div class="bar">
+    <img src="../public/speroceLogo.svg"/>
+  </div>
   <SmokeMeter/>
 </template>
 
@@ -17,16 +19,19 @@ export default defineComponent({
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Courier New', Courier, monospace;
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   right: 0;
+  background: #9385e6;
 }
 .bar {
   width: 100%;
   height: 10vh;
-  background: slateblue;
+  background: #6a5acd;
+  text-align: center;
 }
 </style>
