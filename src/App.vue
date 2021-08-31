@@ -1,6 +1,6 @@
 <template>
   <div class="bar">
-    <img src="../public/speroceLogo.svg"/>
+    <img src="./assets/speroceLogo.svg"/>
   </div>
   <SmokeMeter/>
 </template>
