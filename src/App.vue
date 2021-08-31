@@ -1,16 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld  msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="bar"/>
+  <SmokeMeter/>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import SmokeMeter from './components/SmokeMeter.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    SmokeMeter
   }
 })
 </script>
@@ -18,10 +18,16 @@ export default defineComponent({
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.bar {
+  width: 100%;
+  height: 10vh;
+  background: slateblue;
+  position: relative;
 }
 </style>
