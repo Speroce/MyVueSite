@@ -1,5 +1,5 @@
 <template>
-  <div class="pos">
+  <div>
     <div class="buttons-bar">
       <button :disabled="isDisabled" @click="nowSnort" class="button">Фыркнул сейчас</button>
       <button :disabled="isDisabled" @click="todaySnort" class="button">Фыркнул сегодня</button>
@@ -94,9 +94,6 @@ ul {
 }
 li:not(li:last-child) {
   margin-bottom: 1rem;
-}
-.pos {
-  margin: 5px;
 }
 .button {
   margin-right: 10px;

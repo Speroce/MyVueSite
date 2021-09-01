@@ -3,17 +3,24 @@
     <img src="./assets/speroceLogo.svg" class="first-logo"/>
     <img src="./assets/speroceLogo.svg" class="second-logo" />
   </div>
-  <SmokeMeter/>
+  <div class="maintab-with-content">
+    <MainTab id="MainTab"/>
+    <div class="content">
+      <SmokeMeter id="SmokeMeter"/>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import SmokeMeter from './components/SmokeMeter.vue'
+import MainTab from './components/MainTab.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    SmokeMeter
+    SmokeMeter,
+    MainTab
   }
 })
 </script>
@@ -54,5 +61,19 @@ export default defineComponent({
   top: 4px;
   filter: hue-rotate(-90deg);
   -webkit-filter: hue-rotate(-90deg);
+}
+.maintab-with-content {
+  height: 100%;
+  max-height: 90vh;
+  display: flex;
+}
+.content {
+  width: 100%
+}
+#SmokeMeter {
+  margin: 5px;
+}
+#MainTab {
+  width: 15%;
 }
 </style>
