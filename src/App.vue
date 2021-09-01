@@ -1,6 +1,7 @@
 <template>
   <div class="bar">
-    <img src="./assets/speroceLogo.svg"/>
+    <img src="./assets/speroceLogo.svg" class="first-logo"/>
+    <img src="./assets/speroceLogo.svg" class="second-logo" />
   </div>
   <SmokeMeter/>
 </template>
@@ -33,5 +34,15 @@ export default defineComponent({
   height: 10vh;
   background: #6a5acd;
   text-align: center;
+}
+.first-logo {
+  position: fixed;
+  max-height: 10vh;
+}
+.second-logo {
+  position: relative;
+  top: 1px;
+  left: 3px;
+  max-height: 10vh;
 }
 </style>
