@@ -38,11 +38,18 @@ export default defineComponent({
 .first-logo {
   position: fixed;
   max-height: 10vh;
+  filter: hue-rotate(90deg);
 }
 .second-logo {
   position: relative;
   top: 1px;
   left: 3px;
   max-height: 10vh;
+  transition: left 0.2s, top 0.2s, filter 0.6s cubic-bezier(0,2,1,1);
+}
+.second-logo:hover {
+  left: 4px;
+  top: 4px;
+  filter: hue-rotate(-90deg);
 }
 </style>

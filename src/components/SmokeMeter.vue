@@ -1,10 +1,9 @@
 <template>
   <div class="pos">
-    <div>
+    <div class="buttons-bar">
       <button :disabled="isDisabled" @click="nowSnort" class="button">Фыркнул сейчас</button>
       <button :disabled="isDisabled" @click="todaySnort" class="button">Фыркнул сегодня</button>
     </div>
-    <br/>
     <div class="list">
       <ul>
         <li v-for="time of times" :key="time">{{outputDateString(time)}}</li>
@@ -107,18 +106,24 @@ li:not(li:last-child) {
   border-radius: 1rem 0rem;
   overflow: hidden;
   transition: all 0.75s;
+  box-shadow: 0 0 1rem #2C1D85;
 }
 .button:hover {
   border-radius: 0rem 1rem;
   background: #2C1D85;
   color: #ffc15b;
-  
 }
 .button:disabled {
   background: #A99FE6;
   color: #FFFBA5;
   border-radius: 1rem 0rem;
+  box-shadow: 0 0;
 
+}
+.buttons-bar {
+  padding-top: 0.2rem;
+  width: 100%;
+  padding-bottom: 0.5rem;
 }
 .list {
   height: 250px; 
