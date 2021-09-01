@@ -106,6 +106,7 @@ li:not(li:last-child) {
   border-radius: 1rem 0rem;
   overflow: hidden;
   transition: all 0.75s;
+  -webkit-transition: all 0.75s;
   box-shadow: 0 0 1rem #2C1D85;
 }
 .button:hover {

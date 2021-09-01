@@ -39,6 +39,7 @@ export default defineComponent({
   position: fixed;
   max-height: 10vh;
   filter: hue-rotate(90deg);
+  -webkit-filter: hue-rotate(90deg);
 }
 .second-logo {
   position: relative;
@@ -46,10 +47,12 @@ export default defineComponent({
   left: 3px;
   max-height: 10vh;
   transition: left 0.2s, top 0.2s, filter 0.6s cubic-bezier(0,2,1,1);
+  -webkit-transition: left 0.2s, top 0.2s, filter 0.6s cubic-bezier(0,2,1,1);
 }
 .second-logo:hover {
   left: 4px;
   top: 4px;
   filter: hue-rotate(-90deg);
+  -webkit-filter: hue-rotate(-90deg);
 }
 </style>
