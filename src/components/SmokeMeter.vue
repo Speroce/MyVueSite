@@ -93,9 +93,9 @@ ul {
   background: #a99fe6;
   margin: auto;
 }
-/* li {
+li:not(li:last-child) {
   margin-bottom: 1rem;
-} */
+}
 .pos {
   margin: 5px;
 }
@@ -113,6 +113,12 @@ ul {
   background: #2C1D85;
   color: #ffc15b;
   
+}
+.button:disabled {
+  background: #A99FE6;
+  color: #FFFBA5;
+  border-radius: 1rem 0rem;
+
 }
 .list {
   height: 250px; 
