@@ -4,9 +4,9 @@
     <img src="./assets/speroceLogo.svg" class="second-logo" />
   </div>
   <div class="maintab-with-content">
-    <MainTab id="MainTab"/>
+    <MainTab class="maintab"/>
     <div class="content">
-      <SmokeMeter id="SmokeMeter"/>
+      <SmokeMeter class="smoke-meter"/>
     </div>
   </div>
 </template>
@@ -27,7 +27,6 @@ export default defineComponent({
 
 <style>
 #app {
-  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
   font-family: 'Courier New', Courier, monospace;
   height: 100%;
   width: 100%;
@@ -46,7 +45,6 @@ export default defineComponent({
   position: fixed;
   max-height: 10vh;
   filter: hue-rotate(90deg);
-  -webkit-filter: hue-rotate(90deg);
 }
 .second-logo {
   position: relative;
@@ -54,13 +52,11 @@ export default defineComponent({
   left: 3px;
   max-height: 10vh;
   transition: left 0.2s, top 0.2s, filter 0.6s cubic-bezier(0,2,1,1);
-  -webkit-transition: left 0.2s, top 0.2s, filter 0.6s cubic-bezier(0,2,1,1);
 }
 .second-logo:hover {
   left: 4px;
   top: 4px;
   filter: hue-rotate(-90deg);
-  -webkit-filter: hue-rotate(-90deg);
 }
 .maintab-with-content {
   height: 100%;
@@ -70,10 +66,10 @@ export default defineComponent({
 .content {
   width: 100%
 }
-#SmokeMeter {
+.smoke-meter {
   margin: 5px;
 }
-#MainTab {
+.maintab {
   width: 15%;
 }
 </style>
