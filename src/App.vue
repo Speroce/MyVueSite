@@ -4,7 +4,7 @@
     <img src="./assets/speroceLogo.svg" class="second-logo" />
   </div>
   <div class="maintab-with-content">
-    <MainTab class="maintab"/>
+    <!-- <MainTab class="maintab"/> -->
     <div class="content">
       <SmokeMeter class="smoke-meter"/>
     </div>
